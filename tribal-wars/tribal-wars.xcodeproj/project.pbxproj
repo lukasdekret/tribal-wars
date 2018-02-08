@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1EA8AE202CD6AE005779FE /* BarracksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EA8AD202CD6AE005779FE /* BarracksVC.swift */; };
+		0A1EA8B0202CF29D005779FE /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EA8AF202CF29D005779FE /* StockVC.swift */; };
+		0A1EA8B2202CF2AB005779FE /* WoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EA8B1202CF2AB005779FE /* WoodVC.swift */; };
+		0A1EA8B4202CF8AF005779FE /* GoldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EA8B3202CF8AF005779FE /* GoldVC.swift */; };
+		0A1EA8B6202CFA91005779FE /* FarmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EA8B5202CFA91005779FE /* FarmVC.swift */; };
+		0A1EA8B8202CFCD7005779FE /* UpgradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EA8B7202CFCD7005779FE /* UpgradeVC.swift */; };
 		0A53A38C202C943E00B1F635 /* Materials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53A38B202C943E00B1F635 /* Materials.swift */; };
 		0A53A390202CA14800B1F635 /* MainBuildingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53A38F202CA14800B1F635 /* MainBuildingVC.swift */; };
 		0A86256C202C80220079FFAB /* tribal_warsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86256B202C80220079FFAB /* tribal_warsTests.swift */; };
@@ -29,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1EA8AD202CD6AE005779FE /* BarracksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarracksVC.swift; sourceTree = "<group>"; };
+		0A1EA8AF202CF29D005779FE /* StockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVC.swift; sourceTree = "<group>"; };
+		0A1EA8B1202CF2AB005779FE /* WoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodVC.swift; sourceTree = "<group>"; };
+		0A1EA8B3202CF8AF005779FE /* GoldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldVC.swift; sourceTree = "<group>"; };
+		0A1EA8B5202CFA91005779FE /* FarmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmVC.swift; sourceTree = "<group>"; };
+		0A1EA8B7202CFCD7005779FE /* UpgradeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeVC.swift; sourceTree = "<group>"; };
 		0A53A38B202C943E00B1F635 /* Materials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materials.swift; sourceTree = "<group>"; };
 		0A53A38F202CA14800B1F635 /* MainBuildingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuildingVC.swift; sourceTree = "<group>"; };
 		0A862569202C80220079FFAB /* tribal-warsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tribal-warsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +121,12 @@
 			children = (
 				0ADA9253202C7E9F0077BA70 /* MainVC.swift */,
 				0A53A38F202CA14800B1F635 /* MainBuildingVC.swift */,
+				0A1EA8AD202CD6AE005779FE /* BarracksVC.swift */,
+				0A1EA8AF202CF29D005779FE /* StockVC.swift */,
+				0A1EA8B1202CF2AB005779FE /* WoodVC.swift */,
+				0A1EA8B3202CF8AF005779FE /* GoldVC.swift */,
+				0A1EA8B5202CFA91005779FE /* FarmVC.swift */,
+				0A1EA8B7202CFCD7005779FE /* UpgradeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,10 +259,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A53A38C202C943E00B1F635 /* Materials.swift in Sources */,
+				0A1EA8B2202CF2AB005779FE /* WoodVC.swift in Sources */,
+				0A1EA8B0202CF29D005779FE /* StockVC.swift in Sources */,
 				0A862574202C82A70079FFAB /* ChoosingBtn.swift in Sources */,
 				0A53A390202CA14800B1F635 /* MainBuildingVC.swift in Sources */,
 				0ADA9254202C7E9F0077BA70 /* MainVC.swift in Sources */,
+				0A1EA8B6202CFA91005779FE /* FarmVC.swift in Sources */,
+				0A1EA8B8202CFCD7005779FE /* UpgradeVC.swift in Sources */,
 				0ADA9252202C7E9F0077BA70 /* AppDelegate.swift in Sources */,
+				0A1EA8B4202CF8AF005779FE /* GoldVC.swift in Sources */,
+				0A1EA8AE202CD6AE005779FE /* BarracksVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
