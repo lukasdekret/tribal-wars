@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
 
+    @IBOutlet weak var goldLbl: UILabel!
+    @IBOutlet weak var woodLbl: UILabel!
+    @IBOutlet weak var peopleLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func mainBuilding(_ sender: Any) {
+    }
+    @IBAction func barracks(_ sender: Any) {
+    }
+    @IBAction func stock(_ sender: Any) {
+    }
+    @IBAction func wood(_ sender: Any) {
+    }
+    @IBAction func gold(_ sender: Any) {
+    }
+    @IBAction func farm(_ sender: Any) {
+    }
+    
 }
 

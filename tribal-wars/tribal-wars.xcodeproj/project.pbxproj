@@ -7,17 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A53A38C202C943E00B1F635 /* Materials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53A38B202C943E00B1F635 /* Materials.swift */; };
+		0A53A38E202C962D00B1F635 /* MainBuildingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53A38D202C962D00B1F635 /* MainBuildingVC.swift */; };
+		0A86256C202C80220079FFAB /* tribal_warsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86256B202C80220079FFAB /* tribal_warsTests.swift */; };
+		0A862574202C82A70079FFAB /* ChoosingBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A862573202C82A70079FFAB /* ChoosingBtn.swift */; };
 		0ADA9252202C7E9F0077BA70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA9251202C7E9F0077BA70 /* AppDelegate.swift */; };
-		0ADA9254202C7E9F0077BA70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA9253202C7E9F0077BA70 /* ViewController.swift */; };
+		0ADA9254202C7E9F0077BA70 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA9253202C7E9F0077BA70 /* MainVC.swift */; };
 		0ADA9257202C7E9F0077BA70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA9255202C7E9F0077BA70 /* Main.storyboard */; };
 		0ADA9259202C7E9F0077BA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA9258202C7E9F0077BA70 /* Assets.xcassets */; };
 		0ADA925C202C7E9F0077BA70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA925A202C7E9F0077BA70 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A86256E202C80220079FFAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ADA9246202C7E9F0077BA70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ADA924D202C7E9F0077BA70;
+			remoteInfo = "tribal-wars";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0A53A38B202C943E00B1F635 /* Materials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materials.swift; sourceTree = "<group>"; };
+		0A53A38D202C962D00B1F635 /* MainBuildingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuildingVC.swift; sourceTree = "<group>"; };
+		0A862569202C80220079FFAB /* tribal-warsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tribal-warsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A86256B202C80220079FFAB /* tribal_warsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tribal_warsTests.swift; sourceTree = "<group>"; };
+		0A86256D202C80220079FFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A862573202C82A70079FFAB /* ChoosingBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosingBtn.swift; sourceTree = "<group>"; };
 		0ADA924E202C7E9F0077BA70 /* tribal-wars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tribal-wars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADA9251202C7E9F0077BA70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0ADA9253202C7E9F0077BA70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0ADA9253202C7E9F0077BA70 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0ADA9256202C7E9F0077BA70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0ADA9258202C7E9F0077BA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ADA925B202C7E9F0077BA70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -25,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A862566202C80220079FFAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0ADA924B202C7E9F0077BA70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A86256A202C80220079FFAB /* tribal-warsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A86256B202C80220079FFAB /* tribal_warsTests.swift */,
+				0A86256D202C80220079FFAB /* Info.plist */,
+			);
+			path = "tribal-warsTests";
+			sourceTree = "<group>";
+		};
 		0ADA9245202C7E9F0077BA70 = {
 			isa = PBXGroup;
 			children = (
 				0ADA9250202C7E9F0077BA70 /* tribal-wars */,
+				0A86256A202C80220079FFAB /* tribal-warsTests */,
 				0ADA924F202C7E9F0077BA70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				0ADA924E202C7E9F0077BA70 /* tribal-wars.app */,
+				0A862569202C80220079FFAB /* tribal-warsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +92,10 @@
 		0ADA9250202C7E9F0077BA70 /* tribal-wars */ = {
 			isa = PBXGroup;
 			children = (
+				0ADA9265202C7F9D0077BA70 /* Model */,
+				0ADA9264202C7F940077BA70 /* View */,
+				0ADA9263202C7F880077BA70 /* Controller */,
 				0ADA9251202C7E9F0077BA70 /* AppDelegate.swift */,
-				0ADA9253202C7E9F0077BA70 /* ViewController.swift */,
 				0ADA9255202C7E9F0077BA70 /* Main.storyboard */,
 				0ADA9258202C7E9F0077BA70 /* Assets.xcassets */,
 				0ADA925A202C7E9F0077BA70 /* LaunchScreen.storyboard */,
@@ -64,9 +104,52 @@
 			path = "tribal-wars";
 			sourceTree = "<group>";
 		};
+		0ADA9263202C7F880077BA70 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA9253202C7E9F0077BA70 /* MainVC.swift */,
+				0A53A38D202C962D00B1F635 /* MainBuildingVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0ADA9264202C7F940077BA70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A862573202C82A70079FFAB /* ChoosingBtn.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0ADA9265202C7F9D0077BA70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A53A38B202C943E00B1F635 /* Materials.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A862568202C80220079FFAB /* tribal-warsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A862572202C80220079FFAB /* Build configuration list for PBXNativeTarget "tribal-warsTests" */;
+			buildPhases = (
+				0A862565202C80220079FFAB /* Sources */,
+				0A862566202C80220079FFAB /* Frameworks */,
+				0A862567202C80220079FFAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A86256F202C80220079FFAB /* PBXTargetDependency */,
+			);
+			name = "tribal-warsTests";
+			productName = "tribal-warsTests";
+			productReference = 0A862569202C80220079FFAB /* tribal-warsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0ADA924D202C7E9F0077BA70 /* tribal-wars */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ADA9260202C7E9F0077BA70 /* Build configuration list for PBXNativeTarget "tribal-wars" */;
@@ -94,6 +177,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Lukáš Dekrét";
 				TargetAttributes = {
+					0A862568202C80220079FFAB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0ADA924D202C7E9F0077BA70;
+					};
 					0ADA924D202C7E9F0077BA70 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -114,11 +202,19 @@
 			projectRoot = "";
 			targets = (
 				0ADA924D202C7E9F0077BA70 /* tribal-wars */,
+				0A862568202C80220079FFAB /* tribal-warsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A862567202C80220079FFAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0ADA924C202C7E9F0077BA70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,16 +228,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A862565202C80220079FFAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A86256C202C80220079FFAB /* tribal_warsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0ADA924A202C7E9F0077BA70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADA9254202C7E9F0077BA70 /* ViewController.swift in Sources */,
+				0A53A38C202C943E00B1F635 /* Materials.swift in Sources */,
+				0A862574202C82A70079FFAB /* ChoosingBtn.swift in Sources */,
+				0A53A38E202C962D00B1F635 /* MainBuildingVC.swift in Sources */,
+				0ADA9254202C7E9F0077BA70 /* MainVC.swift in Sources */,
 				0ADA9252202C7E9F0077BA70 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A86256F202C80220079FFAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ADA924D202C7E9F0077BA70 /* tribal-wars */;
+			targetProxy = 0A86256E202C80220079FFAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0ADA9255202C7E9F0077BA70 /* Main.storyboard */ = {
@@ -163,6 +278,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A862570202C80220079FFAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tribal-warsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lukas.tribal-warsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tribal-wars.app/tribal-wars";
+			};
+			name = Debug;
+		};
+		0A862571202C80220079FFAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tribal-warsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lukas.tribal-warsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tribal-wars.app/tribal-wars";
+			};
+			name = Release;
+		};
 		0ADA925E202C7E9F0077BA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -301,6 +446,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A862572202C80220079FFAB /* Build configuration list for PBXNativeTarget "tribal-warsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A862570202C80220079FFAB /* Debug */,
+				0A862571202C80220079FFAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0ADA9249202C7E9F0077BA70 /* Build configuration list for PBXProject "tribal-wars" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
