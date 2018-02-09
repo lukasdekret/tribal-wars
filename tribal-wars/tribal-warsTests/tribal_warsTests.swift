@@ -32,6 +32,10 @@ class tribal_warsTests: XCTestCase {
         XCTAssert(Production.countNextProduction(currentProduction: 121, level: 10) == 158)
     }
     
+    func testCountingNewCapacity() {
+        XCTAssert(Production.countNextCapacity(currentCapacity: 131) == 197)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

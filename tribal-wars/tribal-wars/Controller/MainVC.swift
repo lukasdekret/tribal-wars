@@ -26,8 +26,8 @@ class MainVC: UIViewController {
         materials.gold = 0;
         materials.wood = 0;
         materials.people = 1;
-        materials.goldCapacity = 1000
-        materials.woodCapacity = 1000
+        materials.goldCapacity = 100
+        materials.woodCapacity = 100
         materials.peopleCapacity = 20
         
         buildingsLevel = BuildingsLevel()

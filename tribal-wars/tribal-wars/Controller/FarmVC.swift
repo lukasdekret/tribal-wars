@@ -10,6 +10,11 @@ import UIKit
 
 class FarmVC: UIViewController {
     
+    @IBOutlet weak var farmCapacity: UILabel!
+    @IBOutlet weak var armyLbl: UILabel!
+    @IBOutlet weak var buildingsLbl: UILabel!
+    @IBOutlet weak var nextFarmCapacity: UILabel!
+    
     var materials: Materials!
     var buildingsLevel: BuildingsLevel!
     var army: Army!
@@ -17,6 +22,11 @@ class FarmVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        farmCapacity.text = String(materials.peopleCapacity)
+        let help: Int = countArmyNumbers(army: army)
+        armyLbl.text = String(help)
+        buildingsLbl.text = String(materials.people - help)
+        nextFarmCapacity.text = String(Production.countNextFarmCapacity(currentCapacity: materials.peopleCapacity))
         // Do any additional setup after loading the view.
     }
 
@@ -25,7 +35,10 @@ class FarmVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func countArmyNumbers(army: Army) -> Int {
+        return army.archers + army.spearmen + army.riders*3
+    }
+    
     /*
     // MARK: - Navigation
 

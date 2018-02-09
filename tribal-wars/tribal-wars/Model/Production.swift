@@ -19,4 +19,11 @@ class Production {
         
     }
     
+    class func countNextCapacity(currentCapacity: Int) -> Int {
+        return Int(ceil(Double(currentCapacity)*1.5))
+    }
+    
+    class func countNextFarmCapacity(currentCapacity: Int) -> Int {
+        return Int(ceil(Double(currentCapacity)*1.5))
+    }
 }
