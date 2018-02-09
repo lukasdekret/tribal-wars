@@ -74,11 +74,6 @@ class UpgradeVC: UIViewController {
         fillLabels(labelGold: farmGoldLbl, labelWood: farmWoodLbl, labelPeople: farmPeopleLbl, gold: buildingsLevel.farmGold, wood: buildingsLevel.farmWood, people: 0)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func fillLevelLabel(label: UILabel, level: Int) {
         label.text = "(" + String(level) + ")"
     }
