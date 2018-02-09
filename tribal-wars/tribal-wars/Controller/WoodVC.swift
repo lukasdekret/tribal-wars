@@ -39,8 +39,7 @@ class WoodVC: UIViewController {
     
     @IBAction func mineTapped(_ sender: Any) {
         
-        
-        materials.wood += 10
+        materials.wood += buildingsLevel.woodProduction
         if materials.wood > materials.woodCapacity {
             materials.wood = materials.woodCapacity
         }

@@ -27,7 +27,7 @@ class GoldVC: UIViewController {
         woodLbl.text = String(materials.wood)
         peopleLbl.text = String(materials.people) + "/" + String(materials.peopleCapacity)
         
-        productionLbl.text = String(buildingsLevel.woodProduction)
+        productionLbl.text = String(buildingsLevel.goldProduction)
         nextProductionLbl.text = String(Production.countNextProduction(currentProduction: buildingsLevel.goldProduction, level: buildingsLevel.goldLvl))
         // Do any additional setup after loading the view.
     }
@@ -38,7 +38,8 @@ class GoldVC: UIViewController {
     }
     
     @IBAction func mineTapped(_ sender: Any) {
-        materials.gold += 10
+        
+        materials.gold += buildingsLevel.goldProduction
         if materials.gold > materials.goldCapacity {
             materials.gold = materials.goldCapacity
         }

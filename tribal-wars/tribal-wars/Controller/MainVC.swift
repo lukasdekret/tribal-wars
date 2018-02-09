@@ -56,8 +56,8 @@ class MainVC: UIViewController {
         buildingsLevel.farmGold = 20
         buildingsLevel.farmWood = 25
         
-        buildingsLevel.goldProduction = 1
-        buildingsLevel.woodProduction = 1
+        buildingsLevel.goldProduction = 10 // TODO zmenit
+        buildingsLevel.woodProduction = 10 // TODO zmenit
         
         army = Army() // TODO zmenit pociatocny pocet armady
 
