@@ -38,7 +38,10 @@ class GoldVC: UIViewController {
     }
     
     @IBAction func mineTapped(_ sender: Any) {
-        materials.gold += 1
+        materials.gold += 10
+        if materials.gold > materials.goldCapacity {
+            materials.gold = materials.goldCapacity
+        }
         goldLbl.text = String(materials.gold)
     }
     

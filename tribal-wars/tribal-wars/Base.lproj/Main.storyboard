@@ -1447,25 +1447,25 @@
                                                 <rect key="frame" x="0.0" y="25" width="195" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1T-RJ-2pH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="Ka9-cI-oVZ"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Ka9-cI-oVZ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.88765729969999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bp-zG-nmG">
-                                                        <rect key="frame" x="25" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="40" y="0.0" width="40" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="Jen-VO-lrZ"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Jen-VO-lrZ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.70281333109999999" green="0.42214678290000002" blue="0.03785960352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-p1-E8f">
-                                                        <rect key="frame" x="50" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="80" y="0.0" width="25" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="25" id="MUL-88-qgE"/>
                                                         </constraints>
@@ -1474,14 +1474,15 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf5-7p-hka" customClass="ChoosingBtn" customModule="tribal_wars" customModuleProvider="target">
-                                                        <rect key="frame" x="75" y="0.0" width="120" height="40"/>
+                                                        <rect key="frame" x="105" y="0.0" width="90" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="120" id="gHJ-Ub-agW"/>
+                                                            <constraint firstAttribute="width" constant="90" id="gHJ-Ub-agW"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                                         <state key="normal" title="+"/>
                                                         <connections>
                                                             <action selector="barracks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPx-5h-c1w"/>
+                                                            <action selector="mainBuildingTapped:" destination="l21-Tb-lOL" eventType="touchUpInside" id="uzN-El-sMS"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1518,25 +1519,25 @@
                                                 <rect key="frame" x="0.0" y="24.5" width="195" height="39.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-XH-J1b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="39.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="kcD-dh-luF"/>
+                                                            <constraint firstAttribute="width" constant="40" id="kcD-dh-luF"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.88765729969999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hel-Bu-Qqq">
-                                                        <rect key="frame" x="25" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="40" y="0.0" width="40" height="39.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="Ur3-8H-Wkp"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Ur3-8H-Wkp"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.70281333109999999" green="0.42214678290000002" blue="0.03785960352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9H-fB-UlG">
-                                                        <rect key="frame" x="50" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="80" y="0.0" width="25" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="25" id="TE1-Ns-tcq"/>
                                                         </constraints>
@@ -1545,7 +1546,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLk-5K-EfY" customClass="ChoosingBtn" customModule="tribal_wars" customModuleProvider="target">
-                                                        <rect key="frame" x="75" y="0.0" width="120" height="39.5"/>
+                                                        <rect key="frame" x="105" y="0.0" width="90" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="Cz1-AA-UQZ"/>
                                                         </constraints>
@@ -1553,6 +1554,7 @@
                                                         <state key="normal" title="+"/>
                                                         <connections>
                                                             <action selector="barracks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oxw-Fo-aY0"/>
+                                                            <action selector="barracksTapped:" destination="l21-Tb-lOL" eventType="touchUpInside" id="6Oi-jp-u0K"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1589,25 +1591,25 @@
                                                 <rect key="frame" x="0.0" y="25" width="195" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6v-RR-PEr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="OKS-Yd-ugr"/>
+                                                            <constraint firstAttribute="width" constant="40" id="OKS-Yd-ugr"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.88765729969999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx8-ZB-zdC">
-                                                        <rect key="frame" x="25" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="40" y="0.0" width="40" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="eRf-IE-yxf"/>
+                                                            <constraint firstAttribute="width" constant="40" id="eRf-IE-yxf"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.70281333109999999" green="0.42214678290000002" blue="0.03785960352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59Y-eg-b5U">
-                                                        <rect key="frame" x="50" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="80" y="0.0" width="25" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="25" id="vV8-Qj-b2s"/>
                                                         </constraints>
@@ -1616,7 +1618,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP3-cA-cO1" customClass="ChoosingBtn" customModule="tribal_wars" customModuleProvider="target">
-                                                        <rect key="frame" x="75" y="0.0" width="120" height="40"/>
+                                                        <rect key="frame" x="105" y="0.0" width="90" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="ZTR-83-ek3"/>
                                                         </constraints>
@@ -1624,6 +1626,7 @@
                                                         <state key="normal" title="+"/>
                                                         <connections>
                                                             <action selector="barracks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rbo-fm-bfs"/>
+                                                            <action selector="stockTapped:" destination="l21-Tb-lOL" eventType="touchUpInside" id="AA4-4l-lO9"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1660,25 +1663,25 @@
                                                 <rect key="frame" x="0.0" y="24.5" width="195" height="39.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xor-F5-A6O">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="39.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="sn1-0Y-6hW"/>
+                                                            <constraint firstAttribute="width" constant="40" id="sn1-0Y-6hW"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.88765729969999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vl-RW-bQi">
-                                                        <rect key="frame" x="25" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="40" y="0.0" width="40" height="39.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="cCu-w1-g8X"/>
+                                                            <constraint firstAttribute="width" constant="40" id="cCu-w1-g8X"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.70281333109999999" green="0.42214678290000002" blue="0.03785960352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdI-zb-HOV">
-                                                        <rect key="frame" x="50" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="80" y="0.0" width="25" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="25" id="wR5-To-d2m"/>
                                                         </constraints>
@@ -1686,15 +1689,16 @@
                                                         <color key="textColor" red="0.39004321809999998" green="0.23110214809999999" blue="0.074182884350000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlM-nD-8qg" customClass="ChoosingBtn" customModule="tribal_wars" customModuleProvider="target">
-                                                        <rect key="frame" x="75" y="0.0" width="120" height="39.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Miu-Ka-EJy" customClass="ChoosingBtn" customModule="tribal_wars" customModuleProvider="target">
+                                                        <rect key="frame" x="105" y="0.0" width="90" height="39.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="dFm-5M-prP"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="n2J-MW-YkY"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                                         <state key="normal" title="+"/>
                                                         <connections>
-                                                            <action selector="barracks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQk-ni-uRh"/>
+                                                            <action selector="barracks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4N-di-J3X"/>
+                                                            <action selector="woodTapped:" destination="l21-Tb-lOL" eventType="touchUpInside" id="XFC-b9-Ot7"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1731,25 +1735,25 @@
                                                 <rect key="frame" x="0.0" y="24.5" width="195" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0k-B8-ic4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="wgE-IM-RJo"/>
+                                                            <constraint firstAttribute="width" constant="40" id="wgE-IM-RJo"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.88765729969999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTf-l3-Z2X">
-                                                        <rect key="frame" x="25" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="40" y="0.0" width="40" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="sGG-kJ-hT9"/>
+                                                            <constraint firstAttribute="width" constant="40" id="sGG-kJ-hT9"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.70281333109999999" green="0.42214678290000002" blue="0.03785960352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKn-3x-WwD">
-                                                        <rect key="frame" x="50" y="0.0" width="25" height="40"/>
+                                                        <rect key="frame" x="80" y="0.0" width="25" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="25" id="lYs-9z-RcC"/>
                                                         </constraints>
@@ -1758,7 +1762,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHV-yx-E2T" customClass="ChoosingBtn" customModule="tribal_wars" customModuleProvider="target">
-                                                        <rect key="frame" x="75" y="0.0" width="120" height="40"/>
+                                                        <rect key="frame" x="105" y="0.0" width="90" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="iDi-30-ynG"/>
                                                         </constraints>
@@ -1766,6 +1770,7 @@
                                                         <state key="normal" title="+"/>
                                                         <connections>
                                                             <action selector="barracks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9r-eK-ISh"/>
+                                                            <action selector="goldTapped:" destination="l21-Tb-lOL" eventType="touchUpInside" id="uMc-IO-6vf"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1802,25 +1807,25 @@
                                                 <rect key="frame" x="0.0" y="24.5" width="195" height="39.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZ9-HW-2Ee">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="39.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="ePN-t5-fGL"/>
+                                                            <constraint firstAttribute="width" constant="40" id="ePN-t5-fGL"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.88765729969999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksb-Wo-s9z">
-                                                        <rect key="frame" x="25" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="40" y="0.0" width="40" height="39.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="dm3-hy-scF"/>
+                                                            <constraint firstAttribute="width" constant="40" id="dm3-hy-scF"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.70281333109999999" green="0.42214678290000002" blue="0.03785960352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Iz-x1-3cQ">
-                                                        <rect key="frame" x="50" y="0.0" width="25" height="39.5"/>
+                                                        <rect key="frame" x="80" y="0.0" width="25" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="25" id="gAg-l1-1ej"/>
                                                         </constraints>
@@ -1829,7 +1834,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QR-Qn-KZf" customClass="ChoosingBtn" customModule="tribal_wars" customModuleProvider="target">
-                                                        <rect key="frame" x="75" y="0.0" width="120" height="39.5"/>
+                                                        <rect key="frame" x="105" y="0.0" width="90" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="BRj-TF-Miy"/>
                                                         </constraints>
@@ -1837,6 +1842,7 @@
                                                         <state key="normal" title="+"/>
                                                         <connections>
                                                             <action selector="barracks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8r-bO-g1D"/>
+                                                            <action selector="farmTapped:" destination="l21-Tb-lOL" eventType="touchUpInside" id="Zqb-Lg-xVY"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1873,6 +1879,32 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UbQ-BV-1vv"/>
                     </view>
+                    <connections>
+                        <outlet property="baracksGoldLbl" destination="0BZ-XH-J1b" id="kiq-FN-Uzz"/>
+                        <outlet property="barracksLevelLbl" destination="w9d-tB-74Y" id="p2S-Gy-OTf"/>
+                        <outlet property="barracksPeopleLbl" destination="G9H-fB-UlG" id="bBN-26-Sjl"/>
+                        <outlet property="barracksWoodLbl" destination="Hel-Bu-Qqq" id="Y0y-De-FGJ"/>
+                        <outlet property="farmGoldLbl" destination="vZ9-HW-2Ee" id="eHd-iW-eNl"/>
+                        <outlet property="farmLevelLbl" destination="Toj-yp-T83" id="aFx-fQ-Ra9"/>
+                        <outlet property="farmPeopleLbl" destination="0Iz-x1-3cQ" id="K7n-84-7t8"/>
+                        <outlet property="farmWoodLbl" destination="ksb-Wo-s9z" id="1xJ-2B-dI2"/>
+                        <outlet property="goldGoldLbl" destination="s0k-B8-ic4" id="UPh-X0-IjN"/>
+                        <outlet property="goldLevelLbl" destination="AJH-0Y-iEb" id="0kr-Zi-wds"/>
+                        <outlet property="goldPeopleLbl" destination="AKn-3x-WwD" id="um5-C6-Y6a"/>
+                        <outlet property="goldWoodLbl" destination="iTf-l3-Z2X" id="ZD7-cr-bCz"/>
+                        <outlet property="mainBuildingGoldLbl" destination="B1T-RJ-2pH" id="bKI-2H-VEY"/>
+                        <outlet property="mainBuildingLevelLbl" destination="kH5-tt-H0i" id="bul-6k-uN2"/>
+                        <outlet property="mainBuildingPeopleLbl" destination="Vdq-p1-E8f" id="3cA-AP-BFP"/>
+                        <outlet property="mainBuildingWoodLbl" destination="9Bp-zG-nmG" id="vsv-aF-zMc"/>
+                        <outlet property="stockGoldLbl" destination="F6v-RR-PEr" id="5AH-u7-fBW"/>
+                        <outlet property="stockLevelLbl" destination="Klo-L7-WS2" id="IMb-89-y8R"/>
+                        <outlet property="stockPeopleLbl" destination="59Y-eg-b5U" id="0Pc-y7-3mn"/>
+                        <outlet property="stockWoodLbl" destination="Cx8-ZB-zdC" id="9p7-ny-vv8"/>
+                        <outlet property="woodGoldLbl" destination="Xor-F5-A6O" id="6TQ-eX-MXv"/>
+                        <outlet property="woodLevelLbl" destination="0Ur-D9-ZYi" id="z4G-I1-LxZ"/>
+                        <outlet property="woodPeopleLbl" destination="UdI-zb-HOV" id="HWF-x3-Hpv"/>
+                        <outlet property="woodWoodLbl" destination="3vl-RW-bQi" id="K0T-tp-VCE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spw-iR-rgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6zi-f3-e7J" userLabel="Exit" sceneMemberID="exit"/>

@@ -25,7 +25,18 @@ class MainBuildingVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setLabels()
         
+        
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func setLabels() {
         goldLbl.text = String(materials.gold)
         woodLbl.text = String(materials.wood)
         peopleLbl.text = String(materials.people) + "/" + String(materials.peopleCapacity)
@@ -36,25 +47,8 @@ class MainBuildingVC: UIViewController {
         spearmenLbl.text = String(army.spearmen)
         archersLbl.text = String(army.archers)
         ridersLbl.text = String(army.riders)
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func goldTapped(_ sender: Any) {
         performSegue(withIdentifier: "mainToGold", sender: self)
     }
@@ -115,6 +109,11 @@ class MainBuildingVC: UIViewController {
     }
     
     @IBAction func unwindFromUpgradeVC(segue: UIStoryboardSegue) {
-        
+        if let upgradeVC = segue.source as? UpgradeVC {
+            materials = upgradeVC.materials
+            buildingsLevel = upgradeVC.buildingsLevel
+            army = upgradeVC.army
+            setLabels()
+        }
     }
 }

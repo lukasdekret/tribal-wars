@@ -38,6 +38,24 @@ class MainVC: UIViewController {
         buildingsLevel.goldLvl = 1
         buildingsLevel.farmLvl = 1
         
+        buildingsLevel.mainBuildingGold = 20
+        buildingsLevel.mainBuildingWood = 25
+        
+        buildingsLevel.barracksGold = 40
+        buildingsLevel.barracksWood = 20
+        
+        buildingsLevel.stockGold = 15
+        buildingsLevel.stockWood = 40
+        
+        buildingsLevel.woodGold = 35
+        buildingsLevel.woodWood = 10
+        
+        buildingsLevel.goldGold = 12
+        buildingsLevel.goldWood = 40
+        
+        buildingsLevel.farmGold = 20
+        buildingsLevel.farmWood = 25
+        
         buildingsLevel.goldProduction = 1
         buildingsLevel.woodProduction = 1
         
