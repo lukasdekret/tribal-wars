@@ -19,13 +19,13 @@ class MainVC: UIViewController {
     var army: Army!
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { // vykona sa iba raz
         super.viewDidLoad()
-        
-        materials = Materials()
+
+        materials = Materials() // TODO zmenit pociatocny pocet meterialu
         materials.gold = 0;
         materials.wood = 0;
-        materials.people = 20;
+        materials.people = 1;
         materials.goldCapacity = 1000
         materials.woodCapacity = 1000
         materials.peopleCapacity = 20
@@ -38,10 +38,16 @@ class MainVC: UIViewController {
         buildingsLevel.goldLvl = 1
         buildingsLevel.farmLvl = 1
         
-        army = Army()
+        buildingsLevel.goldProduction = 1
+        buildingsLevel.woodProduction = 1
+        
+        army = Army() // TODO zmenit pociatocny pocet armady
+
         army.spearmen = 0
         army.archers = 0
         army.riders = 0
+        
+        setLabels()
 
     }
 
@@ -113,27 +119,64 @@ class MainVC: UIViewController {
     
     
     @IBAction func unwindFromMainBuildingVC(segue: UIStoryboardSegue) {
+        if let mainBuildingVC = segue.source as? MainBuildingVC {
+            materials = mainBuildingVC.materials
+            buildingsLevel = mainBuildingVC.buildingsLevel
+            army = mainBuildingVC.army
+        }
+        setLabels()
         
     }
     
     @IBAction func unwindFromBarracksVC(segue: UIStoryboardSegue) {
-        
+        if let barracksVC = segue.source as? BarracksVC {
+            materials = barracksVC.materials
+            buildingsLevel = barracksVC.buildingsLevel
+            army = barracksVC.army
+        }
+        setLabels()
     }
     
     @IBAction func unwindFromStockVC(segue: UIStoryboardSegue) {
-        
+        if let stockVC = segue.source as? StockVC {
+            materials = stockVC.materials
+            buildingsLevel = stockVC.buildingsLevel
+            army = stockVC.army
+        }
+        setLabels()
     }
     
     @IBAction func unwindFromWoodVC(segue: UIStoryboardSegue) {
-        
+        if let woodVC = segue.source as? WoodVC {
+            materials = woodVC.materials
+            buildingsLevel = woodVC.buildingsLevel
+            army = woodVC.army
+        }
+        setLabels()
     }
     
     @IBAction func unwindFromGoldVC(segue: UIStoryboardSegue) {
-        
+        if let goldVC = segue.source as? GoldVC {
+            materials = goldVC.materials
+            buildingsLevel = goldVC.buildingsLevel
+            army = goldVC.army
+        }
+        setLabels()
     }
     
     @IBAction func unwindFromFarmVC(segue: UIStoryboardSegue) {
-        
+        if let farmVC = segue.source as? FarmVC {
+            materials = farmVC.materials
+            buildingsLevel = farmVC.buildingsLevel
+            army = farmVC.army
+        }
+        setLabels()
+    }
+    
+    func setLabels() {
+        goldLbl.text = String(materials.gold)
+        woodLbl.text = String(materials.wood)
+        peopleLbl.text = String(materials.people) + "/" + String(materials.peopleCapacity)
     }
     
 }

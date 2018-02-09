@@ -346,6 +346,7 @@
                                 <state key="normal" title="Ťažiť"/>
                                 <connections>
                                     <action selector="mainBuilding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3I-yW-MbF"/>
+                                    <action selector="mineTapped:" destination="3Ei-ra-SQZ" eventType="touchUpInside" id="PLO-Am-Men"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8FV-0G-HER">
@@ -443,6 +444,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gBD-pR-Wrr"/>
                     </view>
+                    <connections>
+                        <outlet property="goldLbl" destination="Ctq-Rc-PPa" id="d0g-45-eNK"/>
+                        <outlet property="nextProductionLbl" destination="VXH-5U-brc" id="DV3-c8-97c"/>
+                        <outlet property="peopleLbl" destination="p8m-vg-5dc" id="fRP-dt-342"/>
+                        <outlet property="productionLbl" destination="dep-ed-Xwo" id="TQI-Xs-HID"/>
+                        <outlet property="woodLbl" destination="5I0-sr-E54" id="fXp-Qe-7Ya"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdi-RQ-ZAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gco-97-oTa" userLabel="Exit" sceneMemberID="exit"/>
@@ -1191,18 +1199,30 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efA-hZ-9Dn">
-                                <rect key="frame" x="100" y="293" width="175" height="24"/>
+                                <rect key="frame" x="50" y="293" width="275" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" text="Sklad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvG-DF-NhA">
-                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="W4N-4J-s7D"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0/1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-wl-FgM">
-                                        <rect key="frame" x="89.5" y="0.0" width="85.5" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-wl-FgM">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="gxJ-yA-TQ3"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.88765729969999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asW-cY-aql">
+                                        <rect key="frame" x="200" y="0.0" width="75" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.70281333109999999" green="0.42214678290000002" blue="0.03785960352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1314,7 +1334,7 @@
                             <constraint firstItem="xID-XE-uvI" firstAttribute="top" secondItem="efA-hZ-9Dn" secondAttribute="bottom" constant="20" id="1h1-PH-sZO"/>
                             <constraint firstItem="efA-hZ-9Dn" firstAttribute="centerX" secondItem="2ft-V3-LLz" secondAttribute="centerX" id="2D7-3F-9kn"/>
                             <constraint firstItem="80X-VH-OLA" firstAttribute="leading" secondItem="NsL-hf-WOz" secondAttribute="leading" constant="20" id="36j-Zd-XSv"/>
-                            <constraint firstItem="NsL-hf-WOz" firstAttribute="trailing" secondItem="efA-hZ-9Dn" secondAttribute="trailing" constant="100" id="4is-ij-q7u"/>
+                            <constraint firstItem="NsL-hf-WOz" firstAttribute="trailing" secondItem="efA-hZ-9Dn" secondAttribute="trailing" constant="50" id="4is-ij-q7u"/>
                             <constraint firstItem="jFs-wc-atj" firstAttribute="top" secondItem="NsL-hf-WOz" secondAttribute="top" constant="40" id="8HB-5U-3A8"/>
                             <constraint firstItem="92O-tv-4XK" firstAttribute="trailing" secondItem="80X-VH-OLA" secondAttribute="trailing" id="Gye-ko-jwE"/>
                             <constraint firstItem="92O-tv-4XK" firstAttribute="top" secondItem="JmU-bb-bbj" secondAttribute="top" id="KdV-M0-pS8"/>
@@ -1330,7 +1350,7 @@
                             <constraint firstItem="NsL-hf-WOz" firstAttribute="trailing" secondItem="xID-XE-uvI" secondAttribute="trailing" constant="20" id="Uu0-X8-Dfq"/>
                             <constraint firstItem="qYp-Pc-3at" firstAttribute="leading" secondItem="NsL-hf-WOz" secondAttribute="leading" constant="30" id="VLC-7r-gd0"/>
                             <constraint firstItem="qje-gM-QQy" firstAttribute="bottom" secondItem="NsL-hf-WOz" secondAttribute="bottom" id="Yno-HK-ULE"/>
-                            <constraint firstItem="efA-hZ-9Dn" firstAttribute="leading" secondItem="NsL-hf-WOz" secondAttribute="leading" constant="100" id="cxQ-S1-xGn"/>
+                            <constraint firstItem="efA-hZ-9Dn" firstAttribute="leading" secondItem="NsL-hf-WOz" secondAttribute="leading" constant="50" id="cxQ-S1-xGn"/>
                             <constraint firstItem="JmU-bb-bbj" firstAttribute="top" secondItem="xID-XE-uvI" secondAttribute="bottom" constant="30" id="h0S-aN-Oha"/>
                             <constraint firstItem="YEd-IA-McY" firstAttribute="top" secondItem="NsL-hf-WOz" secondAttribute="top" constant="30" id="kXa-gc-WdS"/>
                             <constraint firstItem="80X-VH-OLA" firstAttribute="top" secondItem="92O-tv-4XK" secondAttribute="bottom" constant="36" id="kzL-k3-AKP"/>
@@ -1342,6 +1362,14 @@
                         <viewLayoutGuide key="safeArea" id="NsL-hf-WOz"/>
                     </view>
                     <connections>
+                        <outlet property="archersLbl" destination="Y4K-ZS-lfm" id="CJA-U0-Fnh"/>
+                        <outlet property="goldLbl" destination="q9H-Hy-lZ6" id="4x8-Zg-Dtq"/>
+                        <outlet property="goldStockLbl" destination="8Pg-wl-FgM" id="l91-r7-YwQ"/>
+                        <outlet property="peopleLbl" destination="EtX-q4-lXL" id="l1K-JP-xpU"/>
+                        <outlet property="ridersLbl" destination="wB2-2o-baJ" id="aBX-Sv-7dY"/>
+                        <outlet property="spearmenLbl" destination="u35-mv-D2g" id="Jy1-fB-tyw"/>
+                        <outlet property="woodLbl" destination="N2Z-RG-9dv" id="Y1M-eg-wg5"/>
+                        <outlet property="woodStockLbl" destination="asW-cY-aql" id="iCo-y5-dZw"/>
                         <segue destination="l21-Tb-lOL" kind="show" identifier="mainToUpgrade" id="FiA-28-MiG"/>
                         <segue destination="37V-Zg-K8d" kind="show" identifier="mainToBarraks" id="GiX-LR-3MC"/>
                         <segue destination="d5Z-0u-eK4" kind="show" identifier="mainToStock" id="04x-jw-9Cg"/>
@@ -1353,7 +1381,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKb-VP-5ac" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="QX8-Pw-rPb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2127" y="45"/>
+            <point key="canvasLocation" x="-2073" y="45"/>
         </scene>
         <!--UpgradeVC-->
         <scene sceneID="7eI-F5-pwN">

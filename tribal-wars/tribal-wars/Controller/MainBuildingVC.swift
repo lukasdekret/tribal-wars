@@ -10,13 +10,33 @@ import UIKit
 
 class MainBuildingVC: UIViewController {
     
+    @IBOutlet weak var goldLbl: UILabel!
+    @IBOutlet weak var woodLbl: UILabel!
+    @IBOutlet weak var peopleLbl: UILabel!
+    @IBOutlet weak var spearmenLbl: UILabel!
+    @IBOutlet weak var archersLbl: UILabel!
+    @IBOutlet weak var ridersLbl: UILabel!
+    @IBOutlet weak var goldStockLbl: UILabel!
+    @IBOutlet weak var woodStockLbl: UILabel!
+    
     var materials: Materials!
     var buildingsLevel: BuildingsLevel!
     var army: Army!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        goldLbl.text = String(materials.gold)
+        woodLbl.text = String(materials.wood)
+        peopleLbl.text = String(materials.people) + "/" + String(materials.peopleCapacity)
+        
+        goldStockLbl.text = String(materials.goldCapacity)
+        woodStockLbl.text = String(materials.woodCapacity)
+        
+        spearmenLbl.text = String(army.spearmen)
+        archersLbl.text = String(army.archers)
+        ridersLbl.text = String(army.riders)
+        
         // Do any additional setup after loading the view.
     }
 

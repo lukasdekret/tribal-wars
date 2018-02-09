@@ -21,8 +21,15 @@ class tribal_warsTests: XCTestCase {
     }
     
     func testExample() {
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testCountingNewProduction() {
+        XCTAssert(Production.countNextProduction(currentProduction: 1, level: 1) == 2)
+        XCTAssert(Production.countNextProduction(currentProduction: 123, level: 10) == 160)
+        XCTAssert(Production.countNextProduction(currentProduction: 121, level: 10) == 158)
     }
     
     func testPerformanceExample() {

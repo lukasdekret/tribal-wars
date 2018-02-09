@@ -9,11 +9,11 @@
 import Foundation
 
 struct Materials {
-    var gold: Int!
-    var wood: Int!
-    var people: Int!
+    var gold: Int = 0
+    var wood: Int = 0
+    var people: Int = 0
     
-    var goldCapacity: Int!
-    var woodCapacity: Int!
-    var peopleCapacity: Int!
+    var goldCapacity: Int = 0
+    var woodCapacity: Int = 0
+    var peopleCapacity: Int = 0
 }

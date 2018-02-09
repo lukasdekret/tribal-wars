@@ -24,6 +24,8 @@
 		0ADA925C202C7E9F0077BA70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA925A202C7E9F0077BA70 /* LaunchScreen.storyboard */; };
 		0AEEC948202D7FDB008724B8 /* BuildingsLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEC947202D7FDB008724B8 /* BuildingsLevel.swift */; };
 		0AEEC94A202D80C2008724B8 /* Army.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEC949202D80C2008724B8 /* Army.swift */; };
+		0AEEC94D202DAC79008724B8 /* Production.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEC94C202DAC79008724B8 /* Production.swift */; };
+		0AEEC94E202DACF2008724B8 /* Production.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEC94C202DAC79008724B8 /* Production.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		0ADA925D202C7E9F0077BA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AEEC947202D7FDB008724B8 /* BuildingsLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsLevel.swift; sourceTree = "<group>"; };
 		0AEEC949202D80C2008724B8 /* Army.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Army.swift; sourceTree = "<group>"; };
+		0AEEC94C202DAC79008724B8 /* Production.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Production.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,7 @@
 				0A53A38B202C943E00B1F635 /* Materials.swift */,
 				0AEEC947202D7FDB008724B8 /* BuildingsLevel.swift */,
 				0AEEC949202D80C2008724B8 /* Army.swift */,
+				0AEEC94C202DAC79008724B8 /* Production.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A86256C202C80220079FFAB /* tribal_warsTests.swift in Sources */,
+				0AEEC94E202DACF2008724B8 /* Production.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +273,7 @@
 				0AEEC948202D7FDB008724B8 /* BuildingsLevel.swift in Sources */,
 				0A1EA8B2202CF2AB005779FE /* WoodVC.swift in Sources */,
 				0A1EA8B0202CF29D005779FE /* StockVC.swift in Sources */,
+				0AEEC94D202DAC79008724B8 /* Production.swift in Sources */,
 				0A862574202C82A70079FFAB /* ChoosingBtn.swift in Sources */,
 				0A53A390202CA14800B1F635 /* MainBuildingVC.swift in Sources */,
 				0ADA9254202C7E9F0077BA70 /* MainVC.swift in Sources */,

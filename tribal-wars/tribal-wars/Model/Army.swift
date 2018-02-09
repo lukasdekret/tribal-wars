@@ -10,8 +10,8 @@ import Foundation
 
 struct Army {
     
-    var spearmen: Int!
-    var archers: Int!
-    var riders: Int!
+    var spearmen: Int = 0
+    var archers: Int = 0
+    var riders: Int = 0
     
 }

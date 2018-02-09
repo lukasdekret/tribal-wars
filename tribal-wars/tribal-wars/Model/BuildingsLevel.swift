@@ -10,11 +10,14 @@ import Foundation
 
 struct BuildingsLevel {
     
-    var mainBuildingLvl: Int!
-    var barracksLvl: Int!
-    var stockLvl: Int!
-    var woodLvl: Int!
-    var goldLvl: Int!
-    var farmLvl: Int!
+    var mainBuildingLvl: Int = 1
+    var barracksLvl: Int = 1
+    var stockLvl: Int = 1
+    var woodLvl: Int = 1
+    var goldLvl: Int = 1
+    var farmLvl: Int = 1
+    
+    var woodProduction: Int = 1
+    var goldProduction: Int = 1 
     
 }
