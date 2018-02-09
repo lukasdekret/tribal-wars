@@ -10,6 +10,12 @@ import UIKit
 
 class GoldVC: UIViewController {
     
+    @IBOutlet weak var goldLbl: UILabel!
+    @IBOutlet weak var woodLbl: UILabel!
+    @IBOutlet weak var peopleLbl: UILabel!
+    @IBOutlet weak var productionLbl: UILabel!
+    @IBOutlet weak var nextProductionLbl: UILabel!
+    
     var materials: Materials!
     var buildingsLevel: BuildingsLevel!
     var army: Army!
@@ -17,6 +23,12 @@ class GoldVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        goldLbl.text = String(materials.gold)
+        woodLbl.text = String(materials.wood)
+        peopleLbl.text = String(materials.people) + "/" + String(materials.peopleCapacity)
+        
+        productionLbl.text = String(buildingsLevel.woodProduction)
+        nextProductionLbl.text = String(Production.countNextProduction(currentProduction: buildingsLevel.goldProduction, level: buildingsLevel.goldLvl))
         // Do any additional setup after loading the view.
     }
 
@@ -25,7 +37,11 @@ class GoldVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func mineTapped(_ sender: Any) {
+        materials.gold += 1
+        goldLbl.text = String(materials.gold)
+    }
+    
     /*
     // MARK: - Navigation
 

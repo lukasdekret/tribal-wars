@@ -1021,6 +1021,7 @@
                                 <state key="normal" title="Ťažiť"/>
                                 <connections>
                                     <action selector="mainBuilding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADU-bW-7Yp"/>
+                                    <action selector="mineTapped:" destination="wSG-49-1ew" eventType="touchUpInside" id="h3d-tN-ihV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnE-5H-wbv">
@@ -1054,6 +1055,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nRU-FI-B6t"/>
                     </view>
+                    <connections>
+                        <outlet property="goldLbl" destination="27M-KO-cv5" id="bkm-3t-rvy"/>
+                        <outlet property="nextProductionLbl" destination="17Y-te-Mz1" id="fj3-It-VUc"/>
+                        <outlet property="peopleLbl" destination="Oau-mV-UCJ" id="Faf-Yl-YcD"/>
+                        <outlet property="productionLbl" destination="IOe-ED-2T4" id="gqK-HY-xEs"/>
+                        <outlet property="woodLbl" destination="Usl-cb-ojA" id="2ew-7A-E1q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYZ-95-r6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3dv-M1-eoe" userLabel="Exit" sceneMemberID="exit"/>
