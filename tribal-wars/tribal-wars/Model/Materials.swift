@@ -11,4 +11,9 @@ import Foundation
 struct Materials {
     var gold: Int!
     var wood: Int!
+    var people: Int!
+    
+    var goldCapacity: Int!
+    var woodCapacity: Int!
+    var peopleCapacity: Int!
 }

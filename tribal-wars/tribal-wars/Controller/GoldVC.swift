@@ -9,7 +9,11 @@
 import UIKit
 
 class GoldVC: UIViewController {
-
+    
+    var materials: Materials!
+    var buildingsLevel: BuildingsLevel!
+    var army: Army!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
